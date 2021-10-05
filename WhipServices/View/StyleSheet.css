@@ -1,0 +1,243 @@
+﻿#menu ul {
+    list-style: none;
+    height: 37px;
+    width: 80%;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+#menu {
+    align-content: inherit;
+}
+    #menu ul li {
+        background-color: gold;
+        border: solid 1px yellow;
+        width: 141px;
+        height: 35px;
+        text-align: center;
+        line-height: 35px;
+        float: left;
+        position: relative;
+        border-radius: 10px;
+}
+
+        #menu ul li a {
+            text-decoration: none;
+            display: block;
+            color: black;
+        }
+
+            #menu ul li a:hover {
+                background-color: darkgoldenrod;
+                color: black;
+                border-radius: 10px;
+            }
+
+    #menu ul ul {
+        position: absolute;
+        display: none;
+    }
+
+    #menu ul li > ul li {
+        background-color: darkorange;
+        color: orange;
+        border: solid;
+    }
+
+    #menu ul li:hover > ul {
+        display: block;
+        border-radius: 10px;
+    }
+
+#ubody {
+    font-size: 14pt;
+    font-family: 'Times New Roman';
+    background-color: black;
+    background-image: url("../../View/Solid2.png");
+    background-size: 800px 300px;
+    background-attachment: fixed;
+    background-position: right top;
+    background-repeat: no-repeat;
+    color: honeydew;
+    width: 100%;
+    
+    height: 100%;
+}
+
+#signtable {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+#signtable1 {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#logtable {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#signtable {
+    text-align: center;
+    width: 45%;
+    margin: 0 auto;
+    border-top-style: solid;
+    border-top-color: inherit;
+    border-top-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: inherit;
+    border-bottom-width: 1px;
+    height: 184px;
+}
+#stable {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-left: 15%;
+}
+
+td.lcolumn {
+    padding: 5px;
+    text-align: right;
+}
+
+td.rcolumn {
+    padding: 5px;
+    text-align: left;
+}
+
+#heading {
+    text-align: center;
+    vertical-align: middle;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#heading1 {
+    text-align: center;
+    vertical-align: middle;
+    font-style: italic;
+    font-size: 20px;
+}
+
+
+#body {
+    font-size: 14pt;
+    font-family: 'Times New Roman';
+    background-color: black;
+    background-image: url("../../View/Solid2.PNG");
+    background-size: 800px 300px;
+    background-attachment: fixed;
+    background-position:center right;
+    background-repeat: no-repeat;
+    color: honeydew;
+    width: 100%;
+   height: 100%;
+    overflow-y:auto;
+}
+
+#table {
+    border-style: solid;
+    border-width: 1px;
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+    border-color: inherit;
+    }
+
+#input[disabled] {
+    border: solid 1px red;
+}
+
+#bodyContent {
+    position:relative;
+    min-height:100vh;
+    width: 100%;
+    height: 100%;
+    padding-bottom:5rem;
+
+}
+
+#footer {
+    position: absolute;
+    margin-top:-100px;
+    clear:both;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+    font-size: 11pt;
+    font-family: 'Times New Roman';
+    background-color: black;
+    color: white;
+}
+
+#tbFoot {
+    border: solid 2px yellow;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 0px;
+    height: 98px;
+}
+
+#search {
+vertical-align:top;
+
+}
+.button1 {
+    background-color: white;
+    color: gold;
+    border: 2px solid yellow; /* Green */
+}
+
+#serviceGrid {
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 14pt;
+    font-family: 'Times New Roman';
+    background-color: black;
+    padding: 10px;
+    margin: 2px;
+    padding: 2px
+}
+
+
+.serviceGrid th {
+    padding: 10px;
+    border: 1px;
+}
+
+#serviceGrid tr {
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+    font-size: 14pt;
+    font-family: 'Times New Roman';
+    background-color: black;
+    padding: 10px 5px;
+}
+
+#button {
+    background-color: palegoldenrod; /* Green */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}

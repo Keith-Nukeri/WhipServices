@@ -1,0 +1,437 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0CFBA222-E180-4DA8-A219-43C76AA1A264}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WhipServices</RootNamespace>
+    <AssemblyName>WhipServices</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\AddMake.aspx" />
+    <Content Include="Admin\AddModel.aspx" />
+    <Content Include="Admin\AddService.aspx" />
+    <Content Include="Admin\AddStuff.aspx" />
+    <Content Include="Admin\CustomerReport.aspx" />
+    <Content Include="Admin\Report.aspx" />
+    <Content Include="Admin\Services.aspx" />
+    <Content Include="Admin\UpdateBusiness.aspx" />
+    <Content Include="Admin\ViewStuff.aspx" />
+    <Content Include="Customer\AboutUs.aspx" />
+    <Content Include="Customer\AddVehicle.aspx" />
+    <Content Include="Customer\BookService.aspx" />
+    <Content Include="Customer\HelpBooking.aspx" />
+    <Content Include="Customer\HelpVehicle.aspx" />
+    <Content Include="Customer\Profile.aspx" />
+    <Content Include="Customer\Services.aspx" />
+    <Content Include="Customer\ServicesUsed.aspx" />
+    <Content Include="Customer\ViewSchedule.aspx" />
+    <Content Include="Customer\ViewVehicle.aspx" />
+    <Content Include="default.aspx" />
+    <Content Include="Supervisor\AddReport.aspx" />
+    <Content Include="Supervisor\Between.aspx" />
+    <Content Include="Supervisor\Bookings.aspx" />
+    <Content Include="Supervisor\MechanicServices.aspx" />
+    <Content Include="Supervisor\YearSales.aspx" />
+    <Content Include="Supervisor\ProfitReport.aspx" />
+    <Content Include="Unregistered\AboutUs.aspx" />
+    <Content Include="Unregistered\Help.aspx" />
+    <Content Include="Unregistered\SignIn.aspx" />
+    <Content Include="Unregistered\SignUp.aspx" />
+    <Content Include="Unregistered\uService.aspx" />
+    <Content Include="View\aa.png" />
+    <Content Include="View\arrow.png" />
+    <Content Include="View\datePicker.js" />
+    <Content Include="View\fb.PNG" />
+    <Content Include="View\gt500.jfif" />
+    <Content Include="View\ig.png" />
+    <Content Include="View\miwa.png" />
+    <Content Include="View\rmi.png" />
+    <Content Include="View\Solid2.PNG" />
+    <Content Include="View\StyleSheet.css" />
+    <Content Include="View\tw.png" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AddMake.aspx.cs">
+      <DependentUpon>AddMake.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddMake.aspx.designer.cs">
+      <DependentUpon>AddMake.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddModel.aspx.cs">
+      <DependentUpon>AddModel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddModel.aspx.designer.cs">
+      <DependentUpon>AddModel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddService.aspx.cs">
+      <DependentUpon>AddService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddService.aspx.designer.cs">
+      <DependentUpon>AddService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddStuff.aspx.cs">
+      <DependentUpon>AddStuff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddStuff.aspx.designer.cs">
+      <DependentUpon>AddStuff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CustomerReport.aspx.cs">
+      <DependentUpon>CustomerReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CustomerReport.aspx.designer.cs">
+      <DependentUpon>CustomerReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Report.aspx.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Report.aspx.designer.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Services.aspx.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Services.aspx.designer.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UpdateBusiness.aspx.cs">
+      <DependentUpon>UpdateBusiness.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UpdateBusiness.aspx.designer.cs">
+      <DependentUpon>UpdateBusiness.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ViewStuff.aspx.cs">
+      <DependentUpon>ViewStuff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ViewStuff.aspx.designer.cs">
+      <DependentUpon>ViewStuff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\AddVehicle.aspx.cs">
+      <DependentUpon>AddVehicle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\AddVehicle.aspx.designer.cs">
+      <DependentUpon>AddVehicle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\BookService.aspx.cs">
+      <DependentUpon>BookService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\BookService.aspx.designer.cs">
+      <DependentUpon>BookService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\CustomerLayout.Master.cs">
+      <DependentUpon>CustomerLayout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\CustomerLayout.Master.designer.cs">
+      <DependentUpon>CustomerLayout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\HelpBooking.aspx.cs">
+      <DependentUpon>HelpBooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\HelpBooking.aspx.designer.cs">
+      <DependentUpon>HelpBooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\HelpVehicle.aspx.cs">
+      <DependentUpon>HelpVehicle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\HelpVehicle.aspx.designer.cs">
+      <DependentUpon>HelpVehicle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\Services.aspx.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\Services.aspx.designer.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\ServicesUsed.aspx.cs">
+      <DependentUpon>ServicesUsed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\ServicesUsed.aspx.designer.cs">
+      <DependentUpon>ServicesUsed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\ViewSchedule.aspx.cs">
+      <DependentUpon>ViewSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\ViewSchedule.aspx.designer.cs">
+      <DependentUpon>ViewSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\ViewVehicle.aspx.cs">
+      <DependentUpon>ViewVehicle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\ViewVehicle.aspx.designer.cs">
+      <DependentUpon>ViewVehicle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Supervisor\AddReport.aspx.cs">
+      <DependentUpon>AddReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Supervisor\AddReport.aspx.designer.cs">
+      <DependentUpon>AddReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supervisor\Between.aspx.cs">
+      <DependentUpon>Between.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Supervisor\Between.aspx.designer.cs">
+      <DependentUpon>Between.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supervisor\Bookings.aspx.cs">
+      <DependentUpon>Bookings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Supervisor\Bookings.aspx.designer.cs">
+      <DependentUpon>Bookings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supervisor\MechanicServices.aspx.cs">
+      <DependentUpon>MechanicServices.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Supervisor\MechanicServices.aspx.designer.cs">
+      <DependentUpon>MechanicServices.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supervisor\YearSales.aspx.cs">
+      <DependentUpon>YearSales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Supervisor\YearSales.aspx.designer.cs">
+      <DependentUpon>YearSales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supervisor\ProfitReport.aspx.cs">
+      <DependentUpon>ProfitReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Supervisor\ProfitReport.aspx.designer.cs">
+      <DependentUpon>ProfitReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supervisor\SupervisorLayout.Master.cs">
+      <DependentUpon>SupervisorLayout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Supervisor\SupervisorLayout.Master.designer.cs">
+      <DependentUpon>SupervisorLayout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Unregistered\AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Unregistered\AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Unregistered\Help.aspx.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Unregistered\Help.aspx.designer.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Unregistered\SignIn.aspx.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Unregistered\SignIn.aspx.designer.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Unregistered\SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Unregistered\SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Unregistered\UnregisteredLayout.Master.cs">
+      <DependentUpon>UnregisteredLayout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Unregistered\UnregisteredLayout.Master.designer.cs">
+      <DependentUpon>UnregisteredLayout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Unregistered\uService.aspx.cs">
+      <DependentUpon>uService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Unregistered\uService.aspx.designer.cs">
+      <DependentUpon>uService.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Customer\CustomerLayout.Master" />
+    <Content Include="Admin\Admin.Master" />
+    <None Include="packages.config" />
+    <Content Include="Unregistered\UnregisteredLayout.Master" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <Content Include="Supervisor\SupervisorLayout.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{ae28d6e3-6577-4a91-8a57-599fa6946d73}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Handler\BLL.csproj">
+      <Project>{dbba191e-462d-4158-b2eb-dbeb86b1400d}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TypeLibrary\TypeLibrary.csproj">
+      <Project>{02b9b1bf-94c9-4f0e-9216-d1a9ba23e6f4}</Project>
+      <Name>TypeLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51895</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51895/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

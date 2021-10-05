@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhipServices", "WhipServices\WhipServices.csproj", "{0CFBA222-E180-4DA8-A219-43C76AA1A264}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{AE28D6E3-6577-4A91-8A57-599FA6946D73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeLibrary", "TypeLibrary\TypeLibrary.csproj", "{02B9B1BF-94C9-4F0E-9216-D1A9BA23E6F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "Handler\BLL.csproj", "{DBBA191E-462D-4158-B2EB-DBEB86B1400D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CFBA222-E180-4DA8-A219-43C76AA1A264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CFBA222-E180-4DA8-A219-43C76AA1A264}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CFBA222-E180-4DA8-A219-43C76AA1A264}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CFBA222-E180-4DA8-A219-43C76AA1A264}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE28D6E3-6577-4A91-8A57-599FA6946D73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE28D6E3-6577-4A91-8A57-599FA6946D73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE28D6E3-6577-4A91-8A57-599FA6946D73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE28D6E3-6577-4A91-8A57-599FA6946D73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02B9B1BF-94C9-4F0E-9216-D1A9BA23E6F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02B9B1BF-94C9-4F0E-9216-D1A9BA23E6F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02B9B1BF-94C9-4F0E-9216-D1A9BA23E6F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02B9B1BF-94C9-4F0E-9216-D1A9BA23E6F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBBA191E-462D-4158-B2EB-DBEB86B1400D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBBA191E-462D-4158-B2EB-DBEB86B1400D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBBA191E-462D-4158-B2EB-DBEB86B1400D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBBA191E-462D-4158-B2EB-DBEB86B1400D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AEE158E8-148D-4E1E-827C-F9DB75BD404B}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://sict-tfs:8080/tfs/csms
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WhipServices\\WhipServices.csproj
+		SccProjectName1 = WhipServices
+		SccLocalPath1 = WhipServices
+		SccProjectUniqueName2 = DAL\\DAL.csproj
+		SccProjectName2 = DAL
+		SccLocalPath2 = DAL
+		SccProjectUniqueName3 = TypeLibrary\\TypeLibrary.csproj
+		SccProjectName3 = TypeLibrary
+		SccLocalPath3 = TypeLibrary
+		SccProjectUniqueName4 = Handler\\BLL.csproj
+		SccProjectName4 = Handler
+		SccLocalPath4 = Handler
+	EndGlobalSection
+EndGlobal
